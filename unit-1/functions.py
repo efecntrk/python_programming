@@ -131,7 +131,7 @@ def rock_and_roll(muted):
 
 rock_and_roll(True)
 '''
-
+'''
 def categorize(x):
   if (x < 8):
       return 8
@@ -139,6 +139,50 @@ def categorize(x):
   if (x < 15):
       return x
   return 100
+
+'''
+'''
+def add_two(number):
+    total = number + 3
+    print(total)
+    return total
+
+final_var = add_two(3)
+print(final_var)
+
+'''
+'''
+def copy_list(my_original_list):
+    original_list = [1,2,3,4,5,6]
+    for my_new_list in original_list:
+        print(my_new_list)
+'''
+'''
+def sum(numbers):
+    total = 0
+    for x in numbers:
+        total += x
+    return total
+print(sum((8, 2, 3, 0, 7)))
+'''
+'''
+def multiply(numbers):
+    total = 1
+    for x in numbers:
+        total *= x
+    return total
+
+print(multiply((8,2,3,-1,7)))
+
+'''
+
+def get_energy(mass, c=3*10**8):
+    return mass * c**2
+    
+  bomb_energy = get_energy(bomb_mass)
+  
+  print('A 1KG bomb supplies ' + str(bomb_energy) + ' Joules')
+  
 
 
     

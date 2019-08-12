@@ -110,8 +110,24 @@ elif n % 2 == 0 and n >= 20:
 '''
 
 #group print statements together
+
+'''
 n = 6
 if n % 2 == 1 or (n % 2 == 0 and n >= 6 and n <= 20):
     print('Weird')
 if (num % 2 == 0 and (n >= 2 and n <= 5)) or (n % 2 == 0 and n > 20):
     print('Not Weird')
+'''
+
+#nested ifs
+'''
+city = 'Toronto'
+name = 'Efe'
+if city == 'Toronto':
+    if name == 'Efe':
+        print('Welcome, newcomer!!')
+    elif name == 'Connor':
+        print('Wassup!')
+'''
+   
+        
