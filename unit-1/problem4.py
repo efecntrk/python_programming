@@ -5,13 +5,16 @@ x = int(input('Enter the 1st number '))
 
 y = int(input('Enter the 2nd number'))
 
-if op==str('add'):
+if op==('add'):
     print(x+y)
-if op==str('sub'):
+if op==('sub'):
     print(x-y)
-if op==str('mult'):
+if op==('mult'):
     print(x*y)
-if op==str('div'):
+if op==('div'):
     print(x/y)
+
+
+    
 
     

@@ -175,21 +175,149 @@ def multiply(numbers):
 print(multiply((8,2,3,-1,7)))
 
 '''
-
+'''
 def get_energy(mass, c=3*10**8):
     return mass * c**2
     
   bomb_energy = get_energy(bomb_mass)
   
   print('A 1KG bomb supplies ' + str(bomb_energy) + ' Joules')
+
+'''
+
+'''
+def message(name):
+    print('Hello ' + name + ' How are you?')
+message('Efe')
+
+'''
+'''
+def send_greeting(name, is_student):
+    message = ''
+    
+    if is_student:
+        message = f'Hello {name}, you are a student.'
+    else:
+        message = f'Hello {name}, you are an instructior'
+    
+    print(message)
+    
+send_greeting('Efe', True)
+    
+'''
+'''
+def send_greeting(name, is_student):
+    message = ''
+    suffix = ''
+    if is_student:
+        suffix = 'a student'
+    else:
+        suffix = 'an instructior'
+    message = f'Hello {name}, you are {suffix}'
+    
+    #print(message)
   
+send_greeting('Efe', True)
+
+print(message)
+'''
+'''
+def sum_my_numbers(nums):
+    total = 0
+    for num in nums:
+        total += num
+    return total #use return to pass value back to the calling function
+
+result = sum_my_numbers([10, 20, 30, 40, 50])
+
+
+print(result)
+
+print(sum_my_number([1, 2, 3, 4, 5]))
+
+
+'''
+'''
+def item_count(a_list, key):
+    count = 0
+    for item in a_list:
+        if item == key:
+            count += 1
+
+    return count
+
+print(item_count([1, 2, 3, 4], 3))
+'''
+
+
+'''
+def list_intersection(list_one, list_two):
+
+    #create a new list with only tiems in both first and second list
+
+    result = []
+    for item_one in list_one:
+        for item_two in list_two:
+            if item_one == item_two:
+                result.append(item_one)
+
+    return result
+print(list_intersection([1, 3, 5, 7, 9, 10], [3, 4, 5, 8, 9, 10]))           
+'''
+'''
+def list_intersection_2(list_one, list_two):
+    result = []
+    for item in list_one:
+        for item in list_two:
+            result.append(item)
+    return result
+'''
+'''
+def reverse_list(my_list):
+    result = []
+
+
+    for idx in range(len(my_list) -1, -1, -1):  #start - stop - step check range function
+        result.append(my_list[idx])
+    return result
 
 
     
-    
-    
-    
-    
+
+print(reverse_list(['a', 'b', 'c', 'd', 'e', 'f', 'g']))
 
 
+
+'''
+
+#short cut
+'''
+def reverse_list_2(my_list):
+    return my_list[::-1]  #Colons are used to slice the list
+
+print(reverse_list_2(['a', 'b', 'c', 'd', 'e', 'f', 'g']))
+
+'''
+'''
+def reverse_str(my_string):
+
+
+    reversed_string = ''
+    for idx in range(len(my_string) -1, -1, -1):
+        reversed_string += my_string[idx]
+    return reversed_string
+
+
+def is_palindrome(my_string):
+    backwards = reverse_str(my_string)
+    if backwards == my_string:
+        return True
+    return False
+
+print(is_palindrome('level'))
+print(is_palindrome('racecar'))
+print(is_palindrome('aaa'))
+print(is_palindrome('aaadba'))
+print(is_palindrome('amanaplanacanalpanama'))
+'''
 
